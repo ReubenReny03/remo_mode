@@ -10,70 +10,135 @@
 ------------------------------------------
 ```
 
-REMO MODE IS A ALIAS AUTOMATION TOOL
+REMO MODE : A ALIAS AUTOMATION TOOL
 
-WE FORGOT WE CAN CUSTOMIZE A LOT OF OUR WORK BY USING ALIAS AND NOW ITS EVEN MORE EASY FOR YOU
-
-![image](https://github.com/ReubenReny03/remo_mode/assets/91770238/69719100-3379-467d-8b4c-9ba5fdaf3e35)
-
-STEP 1 : run the installremo file → source installremo
-
-**AUTOMATIC REBOOT**
-
-STEP 2 : use remo_edit to add new alias
-
-**AND ENJOY : )**
-
-Hi all, Remo Mode is a feeling to make your linux life feel more special my goal is to make you feel happy with linux by given	ing it a touch of Remo.
-
-Hi, I am Remo and you can rename this project and make your own version of it and add new things which are really cool.
+**INSTALLATION**
 
 
-What is inside the install.sh?
-
-Add remo_mode alias to .bashrc so that you can turn it on when needed.
+---
 
 
-```
-NEW_LINE='alias remo_mode="source ~/.todo"' #? Add alias to .bashrc
-
-# Append the line to ~/.bashrc
-echo $NEW_LINE >> ~/.bashrc
-
-echo "Line added to ~/.bashrc: $NEW_LINE"
-```
 
 
-Add .todo list of all the things which remo_mode can do and how will it to 
-
-Write the file contents and reboot 
+Git clone [https://github.com/ReubenReny03/remo_mode-alias-manager.git](https://github.com/ReubenReny03/remo_mode-alias-manager.git)
 
 
-```
-NEW_FILE="$HOME/.remo_todo"
-MULTILINE_CONTENT=$(cat <<EOM                                                                        
-notify-send REMO_IS_BACK
-alias file_dir="thunar"
-alias exams_f="cd ~/Documents/EXAMS/IA_1/"
-alias remo-help="cat ~/.remo_on"
-alias class-wt="firefox https://classroom.google.com/c/NTU0NTQwMDQ4OTQ1"
-alias remo_edit="nano ~/.remo_todo
-cat ~/.remo_on
-EOM
-)
-
-touch "$NEW_FILE"
-echo "$MULTILINE_CONTENT" > "$NEW_FILE"
-echo "New file created: $NEW_FILE"
-echo "Content added:"
-
-reboot
-```
+unzip remo_mode-alias-manager
 
 
-If you ever want to edit the file and add new shortcut alias then just type remo_edit
+cd remo_mode-alias-manager
 
-And add :
-```
-alias {name_you want}=”{command you want to run}”
-```
+
+source installremo
+
+
+**YOUR SYSTEM WILL REBOOT AFTER THIS DO NOT PANIC**
+
+
+After reboot type “remo_mode” this should start the ReMo mode
+
+
+**USAGE**
+
+
+
+
+---
+
+
+The main use of this is to make your life easy and make use of alias to make you feel like “its your own linux” if you are a student you can add all your needed
+
+
+
+
+
+
+1. Classes link
+2. Shortcut Folder Jumps
+3. Shortcut open folder from terminal
+
+
+**Configuration**
+
+
+
+
+---
+
+
+How much can you change this tool ?
+
+
+There are 2 editing options in this tool
+
+
+
+
+
+
+1. remo_edit_auto → to add more features to the automation
+2. remo_edit_name →to change ReMo to your own name.
+
+
+**Features**
+
+
+
+
+---
+
+
+
+
+
+
+1. Add links to open directly with a command
+2. Open a folder directly with a command
+3. Open file manager **(will change for different distributions)**
+
+
+
+
+## **Getting Started**
+
+
+
+
+---
+
+
+We will discuss the following things work :
+<ol>
+<li> How to add link to a website</li>
+<li>How to set a shortcut to a directory</li>
+<li>How to open file manager at current position from the terminal</li>
+</ol>
+
+
+1.Let's say you want to add a shortcut link to google.com then
+   <ol>
+       <li>type "remo_edit_auto."</li>
+       <li>Add the following line:
+           <pre><code>alias {shortcut_name}="firefox {link}"</code></pre>
+       </li>
+       <li>Save the changes and then run "remo_mode" again.</li>
+   </ol>
+
+
+2.How to set a shortcut to a directory
+  <ol>
+       <li>type"remo_edit_auto "</li>
+       <li>Insert the following line:
+           <pre><code>alias {shortcut_name}="cd ~/{full path to directory}"</code></pre>
+       </li>
+       <li>Save the changes and then run "remo_mode" again.</li>
+   </ol>
+3.How to open file manager at current position from the terminal
+   <ol>
+       <li>Find the command to open the file manager at the current directory (e.g., "thunar" for Mint).</li>
+       <li>type "remo_edit_auto."</li>
+       <li>Add the alias with the correct command:
+           <pre><code>alias {shortcut_name}="{your command}"</code></pre>
+       </li>
+       <li>Save the changes and then run "remo_mode" again.</li>
+   </ol>
