@@ -9,12 +9,12 @@
                                           
 ------------------------------------------
 ```
-![image](https://github.com/ReubenReny03/remo_mode/assets/91770238/69719100-3379-467d-8b4c-9ba5fdaf3e35)
-
 
 REMO MODE IS A ALIAS AUTOMATION TOOL
 
 WE FORGOT WE CAN CUSTOMIZE A LOT OF OUR WORK BY USING ALIAS AND NOT ITS EVEN MORE EASY FOR YOU
+
+![image](https://github.com/ReubenReny03/remo_mode/assets/91770238/69719100-3379-467d-8b4c-9ba5fdaf3e35)
 
 STEP 1 : run the installremo file → source installremo
 
