@@ -1,0 +1,26 @@
+
+
+NEW_LINE='alias remo_mode="source ~/.remo_todo"' #? Add alias to .bashrc
+
+echo $NEW_LINE >> ~/.bashrc 
+
+echo "Line added to ~/.bashrc: $NEW_LINE"
+
+NEW_FILE="$HOME/.remo_todo"
+MULTILINE_CONTENT=$(cat <<EOM                                                                         
+notify-send REMO_IS_BACK
+alias file_dir="thunar"
+alias exams_f="cd ~/Documents/EXAMS/IA_1/"
+alias remo-help="cat ~/.remo_on"
+alias class-wt="firefox https://classroom.google.com/c/NTU0NTQwMDQ4OTQ1"
+alias remo_edit="nano ~/.remo_todo
+cat ~/.remo_on
+EOM
+)
+
+touch "$NEW_FILE"
+echo "$MULTILINE_CONTENT" > "$NEW_FILE"
+echo "New file created: $NEW_FILE"
+echo "Content added:"
+
+reboot
