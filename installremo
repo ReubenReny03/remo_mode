@@ -13,8 +13,35 @@ alias file_dir="thunar"
 alias exams_f="cd ~/Documents/EXAMS/IA_1/"
 alias remo-help="cat ~/.remo_on"
 alias class-wt="firefox https://classroom.google.com/c/NTU0NTQwMDQ4OTQ1"
-alias remo_edit="nano ~/.remo_todo
+alias remo_edit_auto="nano ~/.remo_todo"
+alias remo_edit_name="nano ~/.remo_on"
 cat ~/.remo_on
+EOM
+)
+
+touch "$NEW_FILE"
+echo "$MULTILINE_CONTENT" > "$NEW_FILE"
+echo "New file created: $NEW_FILE"
+echo "Content added:"
+
+NEW_FILE="$HOME/.remo_on"
+MULTILINE_CONTENT=$(cat <<EOM                                                                         
+----------------------------------------
+ ______     _______    ______      _____
+(_____ \   (_______)  |  ___ \    / ___ \.
+ _____) )   _____     | | _ | |  | |   | |
+(_____ (   |  ___)    | || || |  | |   | |
+      | |  | |_____   | || || |  | |___| |
+      |_|  |_______)  |_||_||_|   \_____/
+
+------------------------------------------
+---------------------------
+YOU HAVE UNLOCKED REMO_MODE
+---------------------------
+OPEN FILE MANAGER - file_dir
+GO TO EXAMS - exam_f
+GO TO GCR - class-{subject}
+HELP - remo-help
 EOM
 )
 
