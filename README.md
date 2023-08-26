@@ -25,7 +25,6 @@ Conversion notes:
 * This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
 
 ----->
-
 ```
 -----------------------------------------
  ______     _______    ______      _____
@@ -36,6 +35,13 @@ Conversion notes:
       |_|  |_______)  |_||_||_|   \_____/
                                           
 ------------------------------------------
+---------------------------
+YOU HAVE UNLOCKED REMO_MODE
+---------------------------
+OPEN FILE MANAGER - file_dir
+GO TO EXAMS - exam_f
+GO TO GCR - class-{subject}
+HELP - remo-help
 ```
 
 REMO MODE IS A ALIAS AUTOMATION TOOL
